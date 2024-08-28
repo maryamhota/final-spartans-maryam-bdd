@@ -8,9 +8,9 @@ import java.time.Duration;
 public class BaseSetup {
 
 
-    private static WebDriver driver; // making it static to make it reachable
-    public void setupBrowser(){
+    public static WebDriver driver; // making it static to make it reachable
 
+    public void setupBrowser(){
         driver = new ChromeDriver();
         driver.get("https://dev.insurance.tekschool-students.com/");
         driver.manage().window().maximize();
